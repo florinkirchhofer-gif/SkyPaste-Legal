@@ -1,0 +1,358 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>SkyPaste Privacy Policy</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<style>
+/* Layout: Apple-style document. Frosted sticky bar, a lavender hero band, a hairline contents list, numbered sections with small lavender number pills, tables with a tinted header, lavender footer band. Black on white only. */
+:root {
+  --bg: #FFFFFF;
+  --fg: #000000;
+  --mute: #515154;
+  --rule: #D2D2D7;
+  --accent: #BFBEF5;
+  --accent-soft: #EEEEFC;
+  --font: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --mono: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  color-scheme: light;
+}
+
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  background: var(--bg);
+  color: var(--fg);
+  font: 400 17px/1.6 var(--font);
+  -webkit-font-smoothing: antialiased;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0 0 auto;
+  height: env(safe-area-inset-top, 0px);
+  z-index: 25;
+  background: var(--bg);
+}
+.wrap {
+  width: 100%;
+  max-width: 720px;
+  margin: 0 auto;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+}
+a { color: var(--fg); text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+a:hover { background: var(--accent); }
+:focus-visible { outline: 2px solid var(--fg); outline-offset: 3px; border-radius: 3px; }
+
+/* Bar */
+.bar {
+  position: sticky;
+  top: env(safe-area-inset-top, 0px);
+  z-index: 20;
+  background: rgba(255, 255, 255, .86);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) blur(20px);
+  border-bottom: 1px solid var(--rule);
+}
+.bar .wrap { display: flex; align-items: center; justify-content: space-between; min-height: 52px; }
+.brand { font-weight: 600; font-size: 1.0625rem; letter-spacing: -.01em; text-decoration: none; }
+.brand:hover { background: none; }
+.bar nav a { display: inline-flex; align-items: center; min-height: 44px; font-size: .9375rem; text-decoration: none; }
+.bar nav a:hover { background: none; text-decoration: underline; }
+
+/* Hero */
+.hero { background: var(--bg); }
+.hero .wrap { padding-block: 44px 8px; }
+.eyebrow { font-size: .8125rem; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; margin: 0 0 12px; }
+h1 { font-size: clamp(2rem, 8vw, 2.75rem); line-height: 1.08; font-weight: 600; letter-spacing: -.025em; margin: 0 0 14px; text-wrap: balance; }
+.lede { font-size: 1.0625rem; line-height: 1.55; max-width: 36em; margin: 0 0 14px; color: var(--mute); }
+.meta { font-size: .875rem; margin: 0; color: var(--mute); padding-bottom: 20px; border-bottom: 3px solid var(--accent); }
+
+/* Body copy */
+main { flex: 1; padding-block: 12px 0; }
+section { scroll-margin-top: calc(60px + env(safe-area-inset-top, 0px)); }
+h2 {
+  display: flex; align-items: baseline; gap: 10px;
+  font-size: 1.3125rem; line-height: 1.3; font-weight: 600; letter-spacing: -.015em;
+  margin: 2.4em 0 .7em; padding-top: 1.1em; border-top: 1px solid var(--rule);
+}
+.num { flex: none; color: var(--mute); font-weight: 500; font-variant-numeric: tabular-nums; }
+.num::after { content: "."; }
+.ttl { min-width: 0; text-wrap: balance; }
+h3 { font-size: 1.1875rem; line-height: 1.3; font-weight: 600; letter-spacing: -.01em; margin: 1.7em 0 .4em; }
+p { margin: 0 0 1em; }
+ul, ol { margin: 0 0 1em; padding-left: 1.35em; }
+li { margin: .45em 0; padding-left: .15em; }
+li::marker { color: var(--mute); }
+code { font: .88em var(--mono); background: var(--accent-soft); padding: 1px 5px; border-radius: 5px; }
+
+/* Contents */
+.toc { padding-top: 28px; }
+.toc h2 { margin: 0 0 .5em; padding-top: 0; border-top: 0; font-size: 1.25rem; }
+.toc ol { list-style: none; padding: 0; margin: 0; border-top: 1px solid var(--rule); }
+.toc li { margin: 0; padding: 0; border-bottom: 1px solid var(--rule); }
+.toc a { display: flex; align-items: baseline; gap: 14px; min-height: 48px; padding: 12px 0; text-decoration: none; line-height: 1.35; }
+.toc a:hover { background: var(--accent-soft); }
+.toc .num { min-width: 1.7em; }
+
+/* Tables */
+.tbl { overflow-x: auto; margin: 0 0 1.3em; border: 1px solid var(--rule); border-radius: 12px; }
+table { width: 100%; border-collapse: collapse; font-size: .9375rem; line-height: 1.5; }
+th { text-align: left; font-weight: 600; padding: 10px 14px; background: var(--accent-soft); border-bottom: 1px solid var(--rule); }
+td { vertical-align: top; padding: 12px 14px; border-bottom: 1px solid var(--rule); }
+tr:last-child td { border-bottom: 0; }
+td:first-child { font-weight: 600; }
+@media (max-width: 640px) {
+  table.stack, .stack tbody, .stack tr, .stack td { display: block; }
+  .stack thead { display: none; }
+  .stack tr { padding: 12px 0; border-top: 1px solid var(--rule); }
+  .stack tr:first-child { border-top: 0; }
+  .stack td { padding: 2px 14px; border: 0; }
+  .stack td:empty { display: none; }
+  .stack td::before { content: attr(data-label); display: block; margin-top: 6px; font-size: .8125rem; font-weight: 400; color: var(--mute); }
+  .stack td:first-child::before { display: none; }
+  .stack td:first-child { margin-bottom: 2px; }
+}
+
+/* Footer */
+footer { margin-top: 4em; background: var(--accent-soft); border-top: 3px solid var(--accent); }
+footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 0 24px; padding-block: 22px 30px; font-size: .9375rem; }
+footer p { margin: 0; padding-block: 10px; }
+footer nav { display: flex; flex-wrap: wrap; gap: 0 20px; }
+footer nav a { display: inline-block; padding-block: 10px; }
+footer a:hover { background: var(--bg); }
+</style>
+
+<header class="bar">
+  <div class="wrap">
+    <a class="brand" href="#top">SkyPaste</a>
+    <nav aria-label="Page"><a href="#impressum">Impressum</a></nav>
+  </div>
+</header>
+
+<div class="hero" id="top">
+  <div class="wrap">
+    <h1>Privacy Policy</h1>
+    <p class="lede">SkyPaste syncs your latest clipboard text between your own devices. This policy explains what we collect, why we collect it and which rights you have.</p>
+    <p class="meta">Version 1.0 · Effective November 2026</p>
+  </div>
+</div>
+
+<main class="wrap">
+  <nav class="toc" aria-label="Contents">
+    <h2>Contents</h2>
+    <ol>
+      <li><a href="#s1-controller"><span class="num">1</span><span class="ttl">Controller, scope and summary</span></a></li>
+      <li><a href="#s2-data"><span class="num">2</span><span class="ttl">Data we collect</span></a></li>
+      <li><a href="#s3-purposes"><span class="num">3</span><span class="ttl">Purposes and legal bases</span></a></li>
+      <li><a href="#s4-recipients"><span class="num">4</span><span class="ttl">Recipients and processors</span></a></li>
+      <li><a href="#s5-transfers"><span class="num">5</span><span class="ttl">International data transfers</span></a></li>
+      <li><a href="#s6-security"><span class="num">6</span><span class="ttl">Security measures and encryption</span></a></li>
+      <li><a href="#s7-breach"><span class="num">7</span><span class="ttl">Data breach notification</span></a></li>
+      <li><a href="#s8-retention"><span class="num">8</span><span class="ttl">Retention, deletion and backups</span></a></li>
+      <li><a href="#s9-rights"><span class="num">9</span><span class="ttl">Your rights by region</span></a></li>
+      <li><a href="#s10-complaints"><span class="num">10</span><span class="ttl">Complaints and supervisory authorities</span></a></li>
+      <li><a href="#s11-children"><span class="num">11</span><span class="ttl">Children’s privacy</span></a></li>
+      <li><a href="#s12-automated"><span class="num">12</span><span class="ttl">Automated decisions, tracking and advertising</span></a></li>
+      <li><a href="#s13-changes"><span class="num">13</span><span class="ttl">Changes to this Policy</span></a></li>
+      <li><a href="#s14-principles"><span class="num">14</span><span class="ttl">Privacy principles and governance</span></a></li>
+      <li><a href="#s15-choices"><span class="num">15</span><span class="ttl">Your choices and controls</span></a></li>
+      <li><a href="#s16-emails"><span class="num">16</span><span class="ttl">Emails and notifications</span></a></li>
+      <li><a href="#s17-authorities"><span class="num">17</span><span class="ttl">Requests from authorities</span></a></li>
+      <li><a href="#s18-regions"><span class="num">18</span><span class="ttl">Region-specific notices</span></a></li>
+      <li><a href="#s19-contact"><span class="num">19</span><span class="ttl">Contact and representatives</span></a></li>
+      <li><a href="#s20-law"><span class="num">20</span><span class="ttl">Language, interpretation and governing law</span></a></li>
+    </ol>
+  </nav>
+
+  <section id="s1-controller">
+<h2><span class="num">1</span><span class="ttl">Controller, scope and summary</span></h2>
+<p><strong>App:</strong> SkyPaste · <strong>Controller:</strong> [Your Name or Company Name, full postal address] · <strong>Privacy contact:</strong> <a href="mailto:support@skypasteapp.com">support@skypasteapp.com</a> · <strong>Version:</strong> 1.0, effective November 2026</p>
+<p>SkyPaste (“we”, “us”) is responsible for the personal data described in this Policy. It applies to our mobile, desktop and cross-platform applications and to the support website (together, the “App”).</p>
+<p>The App synchronizes the most recent clipboard text between your own devices. We designed it to know as little about you as possible.</p>
+<p><strong>In short:</strong></p>
+<ul><li>We collect your email address, a random user ID, your subscription status, an encrypted clipboard item and limited technical data needed to run and secure the service.</li><li>Clipboard text is encrypted on your device before it is sent. We store only ciphertext and only the single most recent item per account.</li><li>We do not sell or share your data, we do not use advertising or analytics trackers, and we do not build profiles.</li><li>You can have your account and all associated data deleted at any time (<a href="#s8-retention">section 8</a>).</li><li>No system is perfectly secure. We use the safeguards in <a href="#s6-security">section 6</a> and tell you what they do and do not protect.</li></ul>
+<h3>Key terms</h3>
+<div class="tbl"><table class="stack"><thead><tr><th>Term</th><th>Meaning in this Policy</th></tr></thead><tbody><tr><td data-label="Term">Personal data</td><td data-label="Meaning in this Policy">Any information that identifies you or can reasonably be linked to you, such as your email address or user ID</td></tr><tr><td data-label="Term">Processing</td><td data-label="Meaning in this Policy">Anything we do with personal data: collecting, storing, transmitting, deleting</td></tr><tr><td data-label="Term">Controller</td><td data-label="Meaning in this Policy">The party that decides why and how personal data is processed. In this Policy, that is us</td></tr><tr><td data-label="Term">Processor</td><td data-label="Meaning in this Policy">A provider that processes personal data on our behalf and on our instructions, such as Supabase</td></tr><tr><td data-label="Term">Ciphertext</td><td data-label="Meaning in this Policy">Encrypted data that is unreadable without the key. Your clipboard text reaches us only in this form</td></tr><tr><td data-label="Term">End-to-end encryption (E2EE)</td><td data-label="Meaning in this Policy">Encryption on your device so that only your own devices can read the content</td></tr><tr><td data-label="Term">Metadata</td><td data-label="Meaning in this Policy">Data about data, for example the size and time of a clipboard update, but not its content</td></tr><tr><td data-label="Term">Magic Link</td><td data-label="Meaning in this Policy">A single-use sign-in link sent to your email address instead of a password</td></tr><tr><td data-label="Term">Pro tier</td><td data-label="Meaning in this Policy">The paid subscription that raises the clipboard limit from 550 to 6,000 characters</td></tr></tbody></table></div>
+<h3>Who this Policy applies to</h3>
+<p>This Policy applies to everyone who creates an account or uses the App, wherever they live. It does not apply to websites, apps or services of third parties that you reach from the App or from our support page, such as Apple, Microsoft or GitHub. Please read their privacy notices separately.</p>
+<h3>Our approach to privacy</h3>
+<p>We follow privacy by design and by default. That means we decide what data the App truly needs before we build a feature, we turn the most protective settings on without you asking, and we remove data when we no longer need it. The clipboard feature is the clearest example: instead of storing your content and promising to look after it, we built the App so that we cannot read it.</p>
+</section>
+  <section id="s2-data">
+<h2><span class="num">2</span><span class="ttl">Data we collect</span></h2>
+<p>We process only the categories below.</p>
+<div class="tbl"><table class="stack"><thead><tr><th>Category</th><th>What it contains</th><th>Where it comes from</th></tr></thead><tbody><tr><td data-label="Category">Account data</td><td data-label="What it contains">Email address, random user ID (UUID), account creation date</td><td data-label="Where it comes from">You, at sign-up</td></tr><tr><td data-label="Category">Authentication data</td><td data-label="What it contains">Magic Link requests, session and refresh tokens, last sign-in time</td><td data-label="Where it comes from">Generated when you sign in</td></tr><tr><td data-label="Category">Clipboard data</td><td data-label="What it contains">One encrypted clipboard item per account (ciphertext), its size and last-update time</td><td data-label="Where it comes from">Your devices, encrypted before upload</td></tr><tr><td data-label="Category">Subscription status</td><td data-label="What it contains">Active or inactive Pro tier, transaction ID, expiry date</td><td data-label="Where it comes from">Apple App Store or Microsoft Store</td></tr><tr><td data-label="Category">Technical and log data</td><td data-label="What it contains">IP address, device type, operating system and app version, request time, error and security events</td><td data-label="Where it comes from">Your device when it contacts our servers</td></tr><tr><td data-label="Category">Support correspondence</td><td data-label="What it contains">Your email, its content and any attachments you choose to send</td><td data-label="Where it comes from">You, when you contact us</td></tr></tbody></table></div>
+<p><strong>Clipboard limits.</strong> Free accounts store up to 550 characters, Pro accounts up to 6,000 characters. A new item permanently overwrites the previous one.</p>
+<p><strong>Passwords.</strong> The App uses passwordless Magic Links. We never create, receive or store passwords.</p>
+<h3>What we do not collect</h3>
+<div class="tbl"><table class="stack"><thead><tr><th>We do not collect</th><th>Note</th></tr></thead><tbody><tr><td data-label="We do not collect">Readable clipboard content</td><td data-label="Note">Only ciphertext reaches our servers</td></tr><tr><td data-label="We do not collect">Payment card or bank data, billing address</td><td data-label="Note">Handled solely by Apple or Microsoft</td></tr><tr><td data-label="We do not collect">Contacts, photos, location, microphone, camera</td><td data-label="Note">The App does not request these permissions</td></tr><tr><td data-label="We do not collect">Advertising IDs, analytics or tracking data</td><td data-label="Note">No advertising or analytics SDKs are included</td></tr><tr><td data-label="We do not collect">Special categories of data (health, biometrics and similar)</td><td data-label="Note">We do not ask for them. Do not place them in your clipboard unless you accept the risks of any cloud sync</td></tr></tbody></table></div>
+<p><strong>Voluntary provision.</strong> Email address and encrypted clipboard data are required to use sync. Without them we cannot provide the service.</p>
+<h3>How your data moves through the App</h3>
+<ol><li><strong>Sign-up and sign-in.</strong> You enter your email address. Our backend creates a random user ID and sends you a single-use Magic Link. When you open it, the App receives a session token that is stored in your device’s secure storage.</li><li><strong>Copying.</strong> When you copy text on one device, the App encrypts it locally and uploads the ciphertext. It replaces the previous item for your account.</li><li><strong>Syncing.</strong> Your other signed-in devices download the ciphertext and decrypt it locally with your key.</li><li><strong>Subscribing.</strong> You buy Pro through Apple or Microsoft. The store tells the App and our backend whether your subscription is active. We never see your payment details.</li><li><strong>Signing out or deleting.</strong> Signing out removes the token from that device. Deleting your account removes your records from our systems as described in <a href="#s8-retention">section 8</a>.</li></ol>
+<h3>Technical and log data in detail</h3>
+<p>When the App contacts our servers, the servers and our providers automatically record a small amount of technical data. We use it only to deliver the service, find faults and defend against abuse.</p>
+<div class="tbl"><table class="stack"><thead><tr><th>Item</th><th>Example</th><th>Why we need it</th></tr></thead><tbody><tr><td data-label="Item">IP address</td><td data-label="Example">The address your network assigns to your device</td><td data-label="Why we need it">Rate limiting, abuse prevention, rough fault location</td></tr><tr><td data-label="Item">Request data</td><td data-label="Example">Time, endpoint, response status</td><td data-label="Why we need it">Error analysis and capacity planning</td></tr><tr><td data-label="Item">Device and app data</td><td data-label="Example">Operating system, app version, device type</td><td data-label="Why we need it">Compatibility fixes and support</td></tr><tr><td data-label="Item">Security events</td><td data-label="Example">Failed or repeated sign-in attempts, token errors</td><td data-label="Why we need it">Detecting attacks and account takeover</td></tr></tbody></table></div>
+<p>We do not use this data to track you across other apps or websites, and we do not combine it with data from other companies. We do not attempt to derive your location beyond what is needed to operate and secure the service.</p>
+<h3>Device permissions</h3>
+<p>The App needs access to the system clipboard to do its job. It does not request access to contacts, photos, files, location, camera or microphone. On some operating systems, you can restrict clipboard access in the system settings. If you do, sync may stop working.</p>
+<h3>Data we receive from other sources</h3>
+<p>We receive subscription status and transaction IDs from Apple and Microsoft. We do not buy personal data from data brokers and we do not enrich your account with data from public sources or social networks.</p>
+</section>
+  <section id="s3-purposes">
+<h2><span class="num">3</span><span class="ttl">Purposes and legal bases</span></h2>
+<p>Each purpose has one legal basis. We do not use your data for any other purpose without informing you and, where required, asking for your consent.</p>
+<div class="tbl"><table class="stack"><thead><tr><th>Purpose</th><th>Data used</th><th>Legal basis (GDPR, UK GDPR, Swiss FADP)</th><th>Equivalent elsewhere</th></tr></thead><tbody><tr><td data-label="Purpose">Create your account and sign you in</td><td data-label="Data used">Email, UUID, tokens</td><td data-label="Legal basis (GDPR, UK GDPR, Swiss FADP)">Contract, Art. 6(1)(b)</td><td data-label="Equivalent elsewhere">LGPD Art. 7(V), PIPEDA consent, APP 3</td></tr><tr><td data-label="Purpose">Sync encrypted clipboard between your devices</td><td data-label="Data used">Ciphertext, size, timestamp</td><td data-label="Legal basis (GDPR, UK GDPR, Swiss FADP)">Contract, Art. 6(1)(b)</td><td data-label="Equivalent elsewhere">LGPD Art. 7(V), PIPEDA consent</td></tr><tr><td data-label="Purpose">Unlock and enforce Pro limits</td><td data-label="Data used">Subscription status, transaction ID</td><td data-label="Legal basis (GDPR, UK GDPR, Swiss FADP)">Contract, Art. 6(1)(b)</td><td data-label="Equivalent elsewhere">LGPD Art. 7(V)</td></tr><tr><td data-label="Purpose">Keep the service secure, prevent abuse and fix errors</td><td data-label="Data used">IP address, logs, security events</td><td data-label="Legal basis (GDPR, UK GDPR, Swiss FADP)">Legitimate interests, Art. 6(1)(f)</td><td data-label="Equivalent elsewhere">LGPD Art. 7(IX)</td></tr><tr><td data-label="Purpose">Answer support requests and exercise or defend legal claims</td><td data-label="Data used">Support emails, account data</td><td data-label="Legal basis (GDPR, UK GDPR, Swiss FADP)">Contract, Art. 6(1)(b), and legitimate interests, Art. 6(1)(f)</td><td data-label="Equivalent elsewhere">LGPD Art. 7(V), (VI) and (IX)</td></tr><tr><td data-label="Purpose">Comply with legal duties (tax, accounting, lawful authority requests)</td><td data-label="Data used">As legally required</td><td data-label="Legal basis (GDPR, UK GDPR, Swiss FADP)">Legal obligation, Art. 6(1)(c)</td><td data-label="Equivalent elsewhere">LGPD Art. 7(II)</td></tr></tbody></table></div>
+<p><strong>Legitimate interests.</strong> Our interest is a secure, stable service. We keep the data used for it to a minimum and you may object (<a href="#s9-rights">section 9</a>). Where you are in Switzerland, processing follows the principles of the FADP (lawfulness, good faith, proportionality, purpose limitation) and does not require a legal basis other than where the law says so.</p>
+<p><strong>Consent.</strong> Where we rely on consent, you can withdraw it at any time for the future. Withdrawal does not affect earlier processing. If you withdraw consent needed for sync, we can no longer provide the service.</p>
+</section>
+  <section id="s4-recipients">
+<h2><span class="num">4</span><span class="ttl">Recipients and processors</span></h2>
+<p>We share personal data only with the service providers below, under written agreements that bind them to our instructions, to confidentiality and to appropriate security.</p>
+<div class="tbl"><table class="stack"><thead><tr><th>Recipient</th><th>Role</th><th>Purpose</th><th>Location</th></tr></thead><tbody><tr><td data-label="Recipient">Supabase Inc.</td><td data-label="Role">Processor</td><td data-label="Purpose">Database, authentication, API hosting</td><td data-label="Location">USA, [hosting region, e.g. EU Frankfurt]</td></tr><tr><td data-label="Recipient">[Email delivery provider for Magic Links, or “Supabase default mail service”]</td><td data-label="Role">Processor</td><td data-label="Purpose">Sending sign-in emails</td><td data-label="Location">[Location]</td></tr><tr><td data-label="Recipient">Apple Inc. (App Store)</td><td data-label="Role">Independent controller</td><td data-label="Purpose">Purchases, billing, subscription status</td><td data-label="Location">Worldwide</td></tr><tr><td data-label="Recipient">Microsoft Corporation (Microsoft Store)</td><td data-label="Role">Independent controller</td><td data-label="Purpose">Purchases, billing, subscription status</td><td data-label="Location">Worldwide</td></tr><tr><td data-label="Recipient">[Support or website hosting, e.g. GitHub Pages]</td><td data-label="Role">Processor</td><td data-label="Purpose">Hosting this Policy and the support page</td><td data-label="Location">[Location]</td></tr></tbody></table></div>
+<p><strong>No sale, no sharing.</strong> We do not sell, rent or trade personal data and we do not share it for cross-context behavioral advertising.</p>
+<p><strong>Authorities and legal claims.</strong> We disclose data to courts or authorities only if a valid legal obligation requires it, and only to the extent required. Because clipboard content is encrypted on your device, we cannot hand over its readable content. Where permitted, we notify you of such requests.</p>
+<p><strong>Business transfers.</strong> If we are involved in a merger, acquisition or sale of assets, personal data may be transferred under the same protections as in this Policy, and we will inform you beforehand.</p>
+</section>
+  <section id="s5-transfers">
+<h2><span class="num">5</span><span class="ttl">International data transfers</span></h2>
+<p>Supabase Inc. is based in the USA, and some data may be processed outside your country. We transfer personal data only where a recognized safeguard applies:</p>
+<ul><li><strong>EEA and UK to the USA:</strong> the EU-U.S. Data Privacy Framework and its UK Extension, where the recipient is certified, and otherwise the EU Standard Contractual Clauses with the UK International Data Transfer Addendum.</li><li><strong>Switzerland to the USA:</strong> the Swiss-U.S. Data Privacy Framework where certified, and otherwise the EU Standard Contractual Clauses adapted for Switzerland as recognized by the FDPIC.</li><li><strong>Other regions:</strong> contractual safeguards that give an equivalent level of protection, as required by local law.</li></ul>
+<p>Where we rely on contractual clauses, we assess the destination country’s legal environment and add technical measures where needed. The strongest of these is client-side encryption: clipboard content reaches the provider only as ciphertext, and we do not give the provider the keys.</p>
+<p>You can request a copy of the safeguards we use at <a href="mailto:support@skypasteapp.com">support@skypasteapp.com</a>. Commercially sensitive details may be redacted.</p>
+</section>
+  <section id="s6-security">
+<h2><span class="num">6</span><span class="ttl">Security measures and encryption</span></h2>
+<p>We apply technical and organizational measures appropriate to the risk. No online service can promise absolute security, so we describe what each measure does and what it does not.</p>
+<div class="tbl"><table class="stack"><thead><tr><th>Measure</th><th>What it protects</th><th>Limits</th></tr></thead><tbody><tr><td data-label="Measure">Client-side encryption of clipboard text before upload</td><td data-label="What it protects">Content stays unreadable to us, to our providers and to anyone who gains access to the database</td><td data-label="Limits">Metadata remains visible: item size, update time and account. Anyone who controls your unlocked device or your encryption key can read the content</td></tr><tr><td data-label="Measure">TLS (HTTPS) for all traffic between App and backend</td><td data-label="What it protects">Prevents eavesdropping and tampering in transit</td><td data-label="Limits">Does not protect a compromised device</td></tr><tr><td data-label="Measure">Row-Level Security (<code>auth.uid() = id</code>) enforced in the database</td><td data-label="What it protects">A signed-in user can read and change only their own rows</td><td data-label="Limits">Depends on correct configuration, which we review at each release</td></tr><tr><td data-label="Measure">Magic Link sign-in without passwords</td><td data-label="What it protects">No password database that could leak or be reused</td><td data-label="Limits">Access to your email inbox allows sign-in, so protect that account</td></tr><tr><td data-label="Measure">Session tokens in iOS Keychain or Windows encrypted storage</td><td data-label="What it protects">Tokens are protected by the operating system</td><td data-label="Limits">Depends on the security of your device and its lock</td></tr><tr><td data-label="Measure">Access control and least privilege for our own systems</td><td data-label="What it protects">Only authorized people can reach production systems, with multi-factor authentication</td><td data-label="Limits"></td></tr><tr><td data-label="Measure">Dependency updates and vulnerability handling</td><td data-label="What it protects">Known issues are fixed promptly</td><td data-label="Limits"></td></tr></tbody></table></div>
+<p><strong>Key handling.</strong> [Describe in one or two sentences where the encryption key is created and stored, for example generated on the first device and kept in the device’s secure storage, and how it is shared between your devices. State clearly that we cannot recover lost keys, if that is the case.]</p>
+<p><strong>Your part.</strong> Keep your devices updated and locked, protect your email account, and do not store highly sensitive secrets, such as banking passwords, in the clipboard.</p>
+<p><strong>Reporting vulnerabilities.</strong> If you find a security issue, please write to [Security Contact Email]. We will acknowledge your report and will not take legal action against good-faith research that avoids harming users.</p>
+<h3>Organizational measures</h3>
+<ul><li><strong>Need-to-know access.</strong> Only people who need access to operate the service can reach production systems. Access is reviewed regularly and removed when a role ends.</li><li><strong>Strong authentication for administrators.</strong> Administrative accounts of our providers use multi-factor authentication.</li><li><strong>Separation of environments.</strong> We do not use real user data for development or testing.</li><li><strong>Confidentiality.</strong> Everyone who may come into contact with personal data is bound by a duty of confidentiality.</li><li><strong>Secrets management.</strong> Keys and credentials for our infrastructure are kept out of source code and rotated when exposure is suspected.</li><li><strong>Logging and monitoring.</strong> We monitor for unusual access patterns and review security events.</li><li><strong>Backups.</strong> Backups are encrypted and access to them is restricted.</li><li><strong>Provider diligence.</strong> We choose providers that offer recognized security certifications and contractual security commitments, and we review them when their terms change.</li></ul>
+<h3>Limits of what we can promise</h3>
+<p>Encryption protects content, not everything around it. If someone gains access to your unlocked device, to the key stored on it, or to your email account, they may be able to read your clipboard content or sign in as you. We cannot prevent this by technical means on our side. For that reason we cannot guarantee that the App is free of all vulnerabilities, and we ask you to keep your devices and accounts secure.</p>
+</section>
+  <section id="s7-breach">
+<h2><span class="num">7</span><span class="ttl">Data breach notification</span></h2>
+<p>We maintain an incident response process to detect, contain and assess security incidents. If a personal data breach is likely to put your rights at risk, we will:</p>
+<ol><li>Notify the competent supervisory authority without undue delay and, where the GDPR or UK GDPR applies, within 72 hours of becoming aware of it. Under the Swiss FADP the notification goes to the FDPIC as soon as possible.</li><li>Notify affected users without undue delay where the breach is likely to result in a high risk, and in line with US state breach laws, Canada’s PIPEDA, Brazil’s LGPD and other local rules.</li><li>Tell you what happened, which data is affected, what we have done and what you can do.</li></ol>
+<p>Because clipboard content is encrypted on your device, a breach of our database alone would not expose readable clipboard text. Email addresses and metadata could still be affected.</p>
+</section>
+  <section id="s8-retention">
+<h2><span class="num">8</span><span class="ttl">Retention, deletion and backups</span></h2>
+<div class="tbl"><table class="stack"><thead><tr><th>Data</th><th>Retention</th></tr></thead><tbody><tr><td data-label="Data">Account data (email, UUID)</td><td data-label="Retention">While your account is active, then deleted as described below</td></tr><tr><td data-label="Data">Encrypted clipboard item</td><td data-label="Retention">Only the latest item. Each new item overwrites the previous one. Deleted with the account</td></tr><tr><td data-label="Data">Session tokens</td><td data-label="Retention">Until they expire or you sign out. Deleted with the account</td></tr><tr><td data-label="Data">Subscription status</td><td data-label="Retention">While your account is active. Transaction records are kept at Apple and Microsoft under their own terms</td></tr><tr><td data-label="Data">Technical and security logs</td><td data-label="Retention">[30] days, unless needed longer to investigate a specific incident</td></tr><tr><td data-label="Data">Support correspondence</td><td data-label="Retention">Up to [24] months after the matter is closed, unless a legal claim requires longer</td></tr><tr><td data-label="Data">Records we must keep by law</td><td data-label="Retention">For the legally required period, with access restricted</td></tr></tbody></table></div>
+<p><strong>How to delete your account.</strong> Use [the in-app delete option, if available] or email <a href="mailto:support@skypasteapp.com">support@skypasteapp.com</a> from the address registered to your account. We may ask you to confirm the request by Magic Link to prevent misuse.</p>
+<p><strong>Timeline.</strong> We delete your account, profile and encrypted clipboard record from our live systems within 30 days of a verified request. Copies in encrypted backups are overwritten in the regular backup cycle, which lasts up to [35] days, and are not restored for any purpose other than disaster recovery, after which the deletion is repeated.</p>
+<p><strong>Anonymization.</strong> Where we keep data for statistics or security analysis, we remove identifiers so that it can no longer be linked to you.</p>
+</section>
+  <section id="s9-rights">
+<h2><span class="num">9</span><span class="ttl">Your rights by region</span></h2>
+<p><strong>How to exercise them.</strong> Write to <a href="mailto:support@skypasteapp.com">support@skypasteapp.com</a>. We may verify your identity through a Magic Link to your registered address. We respond within one month (GDPR, UK GDPR, FADP), 45 days (US state laws, extendable once by 45 days), 30 days (PIPEDA) or 15 days (LGPD), or sooner where local law requires. Requests are free unless they are manifestly unfounded or excessive. An authorized agent may act for you with proof of authority.</p>
+<p><strong>Because of end-to-end encryption</strong>, we cannot read your clipboard content. Access and portability requests therefore return the encrypted record and account data, which you can decrypt on your own device.</p>
+<div class="tbl"><table class="stack"><thead><tr><th>Region</th><th>Your rights</th></tr></thead><tbody><tr><td data-label="Region">EEA, UK, Switzerland</td><td data-label="Your rights">Access, rectification, erasure, restriction, data portability, objection to processing based on legitimate interests, withdrawal of consent, and the right not to be subject to solely automated decisions. We make no such decisions</td></tr><tr><td data-label="Region">United States (California, Virginia, Colorado, Connecticut, Utah, Texas and other states)</td><td data-label="Your rights">Know and access, correct, delete, obtain a portable copy, opt out of sale, sharing, targeted advertising and profiling (we do none of these), and non-discrimination. In states that provide it, you may appeal a refusal by replying to our decision. We honor browser opt-out signals such as Global Privacy Control to the extent they apply. California residents may ask which categories of data we collected in the last 12 months (identifiers, commercial information, internet or network activity)</td></tr><tr><td data-label="Region">Canada</td><td data-label="Your rights">Access, correction, withdrawal of consent, challenge of our compliance, and an explanation of how your data is handled</td></tr><tr><td data-label="Region">Brazil</td><td data-label="Your rights">Confirmation of processing, access, correction, anonymization, blocking or deletion of unnecessary data, portability, information about sharing, and review of automated decisions (Art. 18 LGPD). Our data protection contact is listed in <a href="#s19-contact">section 19</a></td></tr><tr><td data-label="Region">Australia</td><td data-label="Your rights">Access and correction under the Australian Privacy Principles, and a complaint to us first</td></tr><tr><td data-label="Region">Japan, Singapore</td><td data-label="Your rights">Disclosure, correction, deletion and cessation of use as provided by APPI and PDPA, and withdrawal of consent in Singapore</td></tr><tr><td data-label="Region">Other regions</td><td data-label="Your rights">The rights granted by your local data protection law, which we honor where they apply</td></tr></tbody></table></div>
+<p>If we refuse a request, we tell you why and how you can complain.</p>
+</section>
+  <section id="s10-complaints">
+<h2><span class="num">10</span><span class="ttl">Complaints and supervisory authorities</span></h2>
+<p>Please contact us first so we can try to solve the issue. You always have the right to complain to a data protection authority, in particular where you live, work or where the issue occurred.</p>
+<div class="tbl"><table class="stack"><thead><tr><th>Region</th><th>Authority</th></tr></thead><tbody><tr><td data-label="Region">Switzerland</td><td data-label="Authority">Federal Data Protection and Information Commissioner (FDPIC / EDÖB)</td></tr><tr><td data-label="Region">EEA</td><td data-label="Authority">The authority of your member state, listed on the website of the European Data Protection Board</td></tr><tr><td data-label="Region">United Kingdom</td><td data-label="Authority">Information Commissioner’s Office (ICO)</td></tr><tr><td data-label="Region">California</td><td data-label="Authority">California Privacy Protection Agency and the California Attorney General</td></tr><tr><td data-label="Region">Other US states</td><td data-label="Authority">Your state attorney general</td></tr><tr><td data-label="Region">Canada</td><td data-label="Authority">Office of the Privacy Commissioner of Canada</td></tr><tr><td data-label="Region">Brazil</td><td data-label="Authority">Autoridade Nacional de Proteção de Dados (ANPD)</td></tr><tr><td data-label="Region">Australia</td><td data-label="Authority">Office of the Australian Information Commissioner (OAIC)</td></tr><tr><td data-label="Region">Japan</td><td data-label="Authority">Personal Information Protection Commission (PPC)</td></tr><tr><td data-label="Region">Singapore</td><td data-label="Authority">Personal Data Protection Commission (PDPC)</td></tr></tbody></table></div>
+</section>
+  <section id="s11-children">
+<h2><span class="num">11</span><span class="ttl">Children’s privacy</span></h2>
+<p>The App is not directed at children under 13, or under the higher age of digital consent where local law sets one (for example 14 in Spain and Austria, 15 in France, 16 in Germany and the Netherlands). In Switzerland, minors capable of judgment may consent for themselves, otherwise a legal representative must. Where local law allows it, a parent or guardian may consent for a younger person and is then responsible for their use of the App.</p>
+<p>We do not knowingly collect personal data from children below these ages. If you believe a child has given us data, write to <a href="mailto:support@skypasteapp.com">support@skypasteapp.com</a>. We will verify the request and delete the data without undue delay.</p>
+</section>
+  <section id="s12-automated">
+<h2><span class="num">12</span><span class="ttl">Automated decisions, tracking and advertising</span></h2>
+<ul><li>We do not make decisions based solely on automated processing that have legal or similarly significant effects, and we do not profile users.</li><li>The App contains no advertising, analytics or crash-tracking SDKs from third parties.</li><li>The App does not use cookies.</li><li>Apple and Microsoft may process data about your purchases and device under their own privacy policies, which we do not control.</li></ul>
+</section>
+  <section id="s13-changes">
+<h2><span class="num">13</span><span class="ttl">Changes to this Policy</span></h2>
+<p>We update this Policy when the law, our providers or the App’s features change. We publish the new version here with a new effective date. For material changes, such as a new purpose, a new category of data or a new recipient, we notify you by email or in the App at least 30 days before they apply, and ask for consent where the law requires it.</p>
+<div class="tbl"><table class="stack"><thead><tr><th>Version</th><th>Effective</th><th>Change</th></tr></thead><tbody><tr><td data-label="Version">1.0</td><td data-label="Effective">November 2026</td><td data-label="Change">Initial policy</td></tr></tbody></table></div>
+</section>
+  <section id="s14-principles">
+<h2><span class="num">14</span><span class="ttl">Privacy principles and governance</span></h2>
+<p>We handle personal data according to the principles that all major privacy laws share.</p>
+<div class="tbl"><table class="stack"><thead><tr><th>Principle</th><th>How we apply it</th></tr></thead><tbody><tr><td data-label="Principle">Lawfulness, fairness, transparency</td><td data-label="How we apply it">Each purpose has a legal basis (<a href="#s3-purposes">section 3</a>) and is explained in this Policy</td></tr><tr><td data-label="Principle">Purpose limitation</td><td data-label="How we apply it">We use data only for the purposes listed and do not repurpose it without notice</td></tr><tr><td data-label="Principle">Data minimization</td><td data-label="How we apply it">One account, one encrypted item, no history, no advertising or analytics data</td></tr><tr><td data-label="Principle">Accuracy</td><td data-label="How we apply it">You can correct your email address, and we correct inaccurate records on request</td></tr><tr><td data-label="Principle">Storage limitation</td><td data-label="How we apply it">Retention periods in <a href="#s8-retention">section 8</a>, with deletion on request</td></tr><tr><td data-label="Principle">Integrity and confidentiality</td><td data-label="How we apply it">Encryption, access control and monitoring (<a href="#s6-security">section 6</a>)</td></tr><tr><td data-label="Principle">Accountability</td><td data-label="How we apply it">We document our processing, review it regularly and can show how we comply</td></tr></tbody></table></div>
+<h3>How we stay accountable</h3>
+<ul><li><strong>Record of processing.</strong> We keep an internal record of what data we process, why, where and with whom.</li><li><strong>Impact assessment.</strong> Before we add a feature that changes how personal data is used, we assess the privacy risk and adjust the design. Where the law requires a formal data protection impact assessment, we carry one out.</li><li><strong>Provider management.</strong> We conclude data processing agreements with providers, review their security and sub-processors, and stop using a provider that no longer meets our requirements.</li><li><strong>Regular review.</strong> We review this Policy at least once a year and after every significant change to the App or our providers.</li><li><strong>Training.</strong> Anyone who works on the App receives guidance on handling personal data.</li><li><strong>Complaint handling.</strong> We log privacy requests and complaints, answer them within the legal deadlines and learn from them.</li></ul>
+</section>
+  <section id="s15-choices">
+<h2><span class="num">15</span><span class="ttl">Your choices and controls</span></h2>
+<p>You decide how much of the App’s functionality you use and what you place in it.</p>
+<ul><li><strong>Decide what you copy.</strong> Only text you copy while the App is running and sync is on is uploaded. Pause sync or sign out before you copy something you do not want to leave your device.</li><li><strong>Sign out.</strong> Signing out removes the session token from that device. Sign out on every device to end all access.</li><li><strong>Replace or clear your clipboard record.</strong> Each new item replaces the previous one. Copying a short, harmless text overwrites the stored item.</li><li><strong>Update your email address.</strong> Contact us if your address changes, and we will update your account after verifying the new address.</li><li><strong>Delete your account.</strong> You can request deletion at any time (<a href="#s8-retention">section 8</a>).</li><li><strong>Cancel your subscription.</strong> Subscriptions are managed in your Apple or Microsoft account settings. Deleting the App or your account with us does not cancel a subscription automatically.</li><li><strong>Change system permissions.</strong> You can restrict clipboard access in your device settings, which may limit sync.</li><li><strong>Choose your email provider.</strong> Because sign-in works through email, using a provider with strong security and two-factor authentication protects your account.</li></ul>
+<p>You are not required to give us any data beyond what the service needs, and we do not make the service worse for you because you exercised a right.</p>
+</section>
+  <section id="s16-emails">
+<h2><span class="num">16</span><span class="ttl">Emails and notifications</span></h2>
+<p>We use your email address only for messages that the service needs:</p>
+<ul><li><strong>Sign-in messages.</strong> Magic Links and related verification emails. These are sent when you ask for them.</li><li><strong>Security and account notices.</strong> For example a warning about suspicious sign-in attempts, a notice about a data breach or a change to your account.</li><li><strong>Service and legal notices.</strong> Material changes to this Policy or to the terms of the service.</li><li><strong>Support replies.</strong> Answers to questions you send us.</li></ul>
+<p>We do not send marketing emails or newsletters. If we ever want to, we will ask for your separate consent first and give you a one-click way to unsubscribe. Service and security messages cannot be turned off while you have an account, because they are part of the service.</p>
+<p>Be careful with Magic Links: they work like a password. Do not forward them, and do not open them on a device you do not trust. We will never ask you for your password, your encryption key or the content of your clipboard by email.</p>
+</section>
+  <section id="s17-authorities">
+<h2><span class="num">17</span><span class="ttl">Requests from authorities</span></h2>
+<p>We handle requests from courts, police and other authorities as follows:</p>
+<ol><li>We check that the request is valid, issued by a competent authority and limited to what is necessary.</li><li>We challenge requests that are too broad, unclear or unlawful, and we disclose only the minimum data that the law requires.</li><li>We tell the affected user about the request unless the law or the authority forbids it.</li><li>We keep an internal record of such requests.</li></ol>
+<p>What we can provide is limited by our design. We hold your email address, user ID, subscription status, technical logs and the encrypted clipboard record. We cannot decrypt your clipboard content, and we do not have your key. We do not create backdoors or weaken encryption on request.</p>
+<p>If you want to know whether we have received requests, contact us. Where permitted, we publish a summary of requests received in a given year on our support page.</p>
+</section>
+  <section id="s18-regions">
+<h2><span class="num">18</span><span class="ttl">Region-specific notices</span></h2>
+<h3>European Economic Area, United Kingdom and Switzerland</h3>
+<ul><li>We process data only where one of the legal bases in <a href="#s3-purposes">section 3</a> applies.</li><li>Where we rely on legitimate interests, we weigh them against your rights and freedoms, and you may ask for details of that assessment.</li><li>You can object to processing based on legitimate interests at any time. We then stop unless we can show compelling grounds, or the data is needed to protect or defend legal claims.</li><li>Where the provision of data is required to use the service, we say so in <a href="#s2-data">section 2</a>.</li><li>For people in Switzerland, we also follow the FADP principles of transparency, purpose limitation, proportionality and data security, and we report breaches to the FDPIC as described in <a href="#s7-breach">section 7</a>.</li></ul>
+<h3>United States: notice at collection</h3>
+<p>This table covers the last 12 months and applies to residents of California and of other states with similar laws.</p>
+<div class="tbl"><table class="stack"><thead><tr><th>Category (California Civil Code §1798.140)</th><th>Examples</th><th>Collected</th><th>Sold or shared</th><th>Retention</th></tr></thead><tbody><tr><td data-label="Category (California Civil Code §1798.140)">Identifiers</td><td data-label="Examples">Email address, user ID, IP address</td><td data-label="Collected">Yes</td><td data-label="Sold or shared">No</td><td data-label="Retention"><a href="#s8-retention">Section 8</a></td></tr><tr><td data-label="Category (California Civil Code §1798.140)">Commercial information</td><td data-label="Examples">Subscription status, transaction ID</td><td data-label="Collected">Yes</td><td data-label="Sold or shared">No</td><td data-label="Retention"><a href="#s8-retention">Section 8</a></td></tr><tr><td data-label="Category (California Civil Code §1798.140)">Internet or other network activity</td><td data-label="Examples">Technical logs, encrypted API interactions</td><td data-label="Collected">Yes</td><td data-label="Sold or shared">No</td><td data-label="Retention"><a href="#s8-retention">Section 8</a></td></tr><tr><td data-label="Category (California Civil Code §1798.140)">Customer records</td><td data-label="Examples">Email address</td><td data-label="Collected">Yes</td><td data-label="Sold or shared">No</td><td data-label="Retention"><a href="#s8-retention">Section 8</a></td></tr><tr><td data-label="Category (California Civil Code §1798.140)">Geolocation, biometric, health, employment or education data</td><td data-label="Examples">Not applicable</td><td data-label="Collected">No</td><td data-label="Sold or shared">No</td><td data-label="Retention">Not applicable</td></tr><tr><td data-label="Category (California Civil Code §1798.140)">Sensitive personal information</td><td data-label="Examples">Account log-in credentials are not stored. We hold no sensitive data in readable form</td><td data-label="Collected">No</td><td data-label="Sold or shared">No</td><td data-label="Retention">Not applicable</td></tr></tbody></table></div>
+<p>We do not sell or share personal information, we do not use it for targeted advertising, and we do not use or disclose sensitive personal information for purposes other than those permitted by law. We do not knowingly sell or share the data of anyone under 16.</p>
+<p><strong>Shine the Light.</strong> California residents may ask once a year which personal information we disclosed to third parties for their direct marketing. We make no such disclosures.</p>
+<p><strong>Nevada.</strong> We do not sell covered information as defined by Nevada law. You may still send an opt-out request to <a href="mailto:support@skypasteapp.com">support@skypasteapp.com</a>.</p>
+<h3>Canada</h3>
+<p>We obtain your consent when you create your account and use the App. If we process your data for a new purpose, we ask again. Our processing is limited to what a reasonable person would consider appropriate. In Quebec, you may request information about the technology we use, and you may ask us to stop disseminating your data or to deindex it, where the law provides these rights. Your data may be processed outside Canada, as described in <a href="#s5-transfers">section 5</a>.</p>
+<h3>Brazil</h3>
+<p>Our contact for questions under the LGPD is in <a href="#s19-contact">section 19</a>. You may request a clear and complete declaration about the processing, and you may ask for a review of any decision taken solely on automated processing. We do not take such decisions.</p>
+<h3>Australia</h3>
+<p>We handle personal information under the Australian Privacy Principles. We take reasonable steps to ensure that overseas recipients of your information, such as Supabase, protect it consistently with the APPs. If a breach is likely to cause serious harm, we notify you and the OAIC under the Notifiable Data Breaches scheme.</p>
+<h3>Japan, Singapore and South Korea</h3>
+<p>We use your data only for the purposes in <a href="#s3-purposes">section 3</a>, we take security measures proportionate to risk, and we ensure that overseas transfers are protected as described in <a href="#s5-transfers">section 5</a>. You may request disclosure, correction, suspension of use or deletion, as the APPI, the PDPA or the PIPA provide. In Singapore, you may withdraw consent by contacting us, and we tell you the consequences of withdrawal.</p>
+<h3>Other countries</h3>
+<p>If you live in a country not listed, the data protection law of that country applies to you where it is relevant, and we honor the rights it grants. Contact us if you are unsure.</p>
+</section>
+  <section id="s19-contact">
+<h2><span class="num">19</span><span class="ttl">Contact and representatives</span></h2>
+<div class="tbl"><table class="stack"><thead><tr><th>Role</th><th>Contact</th></tr></thead><tbody><tr><td data-label="Role">Controller and privacy contact</td><td data-label="Contact">[Your Name or Company Name], [postal address], <a href="mailto:support@skypasteapp.com">support@skypasteapp.com</a></td></tr><tr><td data-label="Role">Data protection officer or privacy lead (if appointed)</td><td data-label="Contact">[Name or role], [email]</td></tr><tr><td data-label="Role">EU representative (Art. 27 GDPR), if the controller is outside the EEA</td><td data-label="Contact">[Name, address, email]</td></tr><tr><td data-label="Role">UK representative (Art. 27 UK GDPR), if the controller is outside the UK</td><td data-label="Contact">[Name, address, email]</td></tr><tr><td data-label="Role">Swiss representative (Art. 14 FADP), if the controller is outside Switzerland</td><td data-label="Contact">[Name, address, email]</td></tr><tr><td data-label="Role">Brazil data protection contact (LGPD Art. 41)</td><td data-label="Contact">[Name, email]</td></tr><tr><td data-label="Role">Security reports</td><td data-label="Contact">[Security Contact Email]</td></tr><tr><td data-label="Role">Support and documentation</td><td data-label="Contact">[Your GitHub Pages or Support Website URL]</td></tr></tbody></table></div>
+<p>We aim to reply within 5 working days. Statutory deadlines in <a href="#s9-rights">section 9</a> apply to formal rights requests.</p>
+</section>
+  <section id="s20-law">
+<h2><span class="num">20</span><span class="ttl">Language, interpretation and governing law</span></h2>
+<p>This Policy is written in English. Translations are provided for convenience, and if they differ, the English version prevails unless local law requires otherwise. Headings are for orientation and do not limit the meaning of the text.</p>
+<p>If a part of this Policy is found to be invalid, the rest remains in force. Mandatory data protection rights in your country always apply and are not limited by this Policy. Nothing in this Policy takes away rights that you have under consumer protection or data protection law.</p>
+<p>This Policy is governed by the law of [Country of the controller], without affecting the mandatory rights of consumers and data subjects in their country of residence.</p>
+</section>
+
+  <section id="impressum">
+    <h2><span class="ttl">Impressum</span></h2>
+    <p>Legal notice for SkyPaste.</p>
+    <p><strong>Provider:</strong> [Name or company name]</p>
+    <p><strong>Address:</strong> [Street and number, postcode and city, country]</p>
+    <p><strong>Email:</strong> <a href="mailto:support@skypasteapp.com">support@skypasteapp.com</a></p>
+    <p><strong>Represented by:</strong> [Name of the authorized person, if a company]</p>
+    <p><strong>Commercial register or UID number:</strong> [Entry or number, if applicable]</p>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>© 2026 SkyPaste. All rights reserved.</p>
+    <nav aria-label="Legal">
+      <a href="#top">Privacy Policy</a>
+      <a href="#impressum">Impressum</a>
+      <a href="mailto:support@skypasteapp.com">support@skypasteapp.com</a>
+    </nav>
+  </div>
+</footer>
+
+</body></html>
